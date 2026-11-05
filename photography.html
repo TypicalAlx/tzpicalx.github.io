@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photography — Alexander Nguyen</title>
+  <meta name="description" content="Concert, people and place photography by Alexander Nguyen, shot on a Fujifilm X100VI.">
+  <meta name="theme-color" content="#050505">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Inter:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <a class="nav__brand" href="index.html" aria-label="Alexander Nguyen, home">
+      <strong>ALEXANDER NGUYEN</strong><span>IT &amp; photography</span>
+    </a>
+    <button class="nav__toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
+    <nav aria-label="Main">
+      <ul class="nav__links" id="nav-links">
+        <li><a href="it-projects.html">IT Projects</a></li>
+        <li><a href="photography.html" aria-current="page">Photography</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="#contact" class="is-accent">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="leaks" aria-hidden="true">
+        <span class="leak" style="--o:.6;--b:150px;width:460px;height:700px;left:-220px;top:-120px"></span>
+      </div>
+      <h1 class="display icy">Photography</h1>
+      <p>Concerts, people and places — moments I didn’t want to forget.</p>
+      <p class="note note--ring" aria-hidden="true">shot on my Fujifilm X100VI</p>
+    </section>
+
+    <!-- Filter buttons are generated from the photo categories in js/photography.js -->
+    <div class="filters" data-filters role="group" aria-label="Filter photos"></div>
+
+    <!-- ============ FEATURED ============ -->
+    <section class="featured reveal" aria-labelledby="featured-title">
+      <button class="ph featured__img" type="button" data-open="assets/photos/concert-spotlights.jpg" aria-label="Open featured photo full screen">
+        <img src="assets/photos/concert-spotlights.jpg" alt="Performers on stage under spotlight beams, crowd in the foreground">
+      </button>
+      <div class="featured__cap">
+        <div>
+          <h2 id="featured-title">Spotlights</h2>
+          <p class="muted">Live show · Fujifilm X100VI · 2026</p>
+        </div>
+        <span class="eyebrow">Featured</span>
+      </div>
+      <p class="note" aria-hidden="true">my favorite ↓</p>
+    </section>
+
+    <!-- ============ SERIES ============ -->
+    <section class="section section--line container" aria-labelledby="series-title">
+      <div class="leaks" aria-hidden="true">
+        <span class="leak" style="--o:.45;--b:170px;width:500px;height:900px;right:-240px;top:300px"></span>
+      </div>
+      <h2 class="section-title reveal" id="series-title" style="margin-bottom:56px">My series</h2>
+      <p class="note note--ring" style="right:calc(var(--pad) + 60px);top:150px" aria-hidden="true">front row</p>
+      <div class="series-grid">
+        <article class="series-card reveal">
+          <button class="ph cover" type="button" data-open="assets/photos/concert-nebula.jpg" aria-label="Open Concert series cover" style="width:100%">
+            <img src="assets/photos/concert-nebula.jpg" alt="Performers dancing in front of a nebula screen">
+          </button>
+          <div class="series-card__row"><h3>Concert series</h3><a class="see-more" href="#gallery">See more</a></div>
+          <p class="muted">Photo series, 2026</p>
+        </article>
+        <article class="series-card is-soon reveal">
+          <div class="ph cover">Coming soon</div>
+          <div class="series-card__row"><h3>Next series</h3></div>
+          <p class="muted">Photo series</p>
+        </article>
+        <article class="series-card is-soon reveal">
+          <div class="ph cover">Coming soon</div>
+          <div class="series-card__row"><h3>Next series</h3></div>
+          <p class="muted">Photo series</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>CONCERTS</span><span>↓</span><span>STREET</span><span>↓</span><span>PORTRAITS</span><span>↓</span><span>LANDSCAPE</span><span>↓</span>
+          <span>CONCERTS</span><span>↓</span><span>STREET</span><span>↓</span><span>PORTRAITS</span><span>↓</span><span>LANDSCAPE</span><span>↓</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section container" id="gallery" aria-labelledby="gallery-title">
+      <div class="gallery-head reveal">
+        <h2 class="display feature-title icy" id="gallery-title">Gallery</h2>
+        <p class="muted" style="margin:0">Click any photo to view it full size</p>
+      </div>
+      <!-- Filled from the PHOTOS list in js/photography.js -->
+      <div class="gallery" data-gallery></div>
+    </section>
+  </main>
+
+  <footer class="contact" id="contact">
+    <div class="leaks" aria-hidden="true">
+      <span class="leak" style="--o:.55;--b:150px;width:700px;height:260px;left:-120px;bottom:-140px"></span>
+      <span class="leak" style="--c:var(--leak-red);--o:.45;--b:130px;width:400px;height:200px;left:380px;bottom:-120px"></span>
+    </div>
+    <h2 class="display contact__title icy" style="position:relative;z-index:1">Let's connect</h2>
+    <div class="contact__row">
+      <a class="contact__email" href="mailto:contact@tzpicalx.com">contact@tzpicalx.com</a>
+      <ul class="socials">
+        <li><a href="https://github.com/tzpicalx" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/tzpicalx" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/tzpicalx" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+    <small>© <span data-year>2026</span> Alexander Nguyen</small>
+  </footer>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" data-lightbox role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+    <div class="leaks" aria-hidden="true">
+      <span class="leak" style="--o:.35;--b:160px;width:420px;height:800px;right:-200px;top:200px"></span>
+    </div>
+    <span class="lightbox__count" data-count>01 / 01</span>
+    <button class="lightbox__close" type="button">✕&nbsp; Close</button>
+    <button class="round-btn lightbox__prev" type="button" aria-label="Previous photo">←</button>
+    <div class="lightbox__stage"><img class="lightbox__img" alt=""></div>
+    <button class="round-btn round-btn--accent lightbox__next" type="button" aria-label="Next photo">→</button>
+    <p class="lightbox__cap"><span data-title></span><span data-camera></span></p>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/photography.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alexander Nguyen — IT & Photography</title>
+  <meta name="description" content="Alexander Nguyen — IT student building networks and websites, and a concert photographer shooting on a Fujifilm X100VI.">
+  <meta name="theme-color" content="#050505">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Inter:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <a class="nav__brand" href="index.html" aria-label="Alexander Nguyen, home">
+      <strong>ALEXANDER NGUYEN</strong><span>IT &amp; photography</span>
+    </a>
+    <button class="nav__toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
+    <nav aria-label="Main">
+      <ul class="nav__links" id="nav-links">
+        <li><a href="it-projects.html">IT Projects</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="is-accent">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-name">
+      <div class="leaks" aria-hidden="true">
+        <span class="leak" style="--c:var(--leak-orange);--o:.85;--b:140px;width:420px;height:1000px;right:-160px;top:-120px"></span>
+        <span class="leak" style="--c:var(--leak-cream);--o:.9;--b:70px;width:170px;height:760px;right:-40px;top:-20px"></span>
+        <span class="leak" style="--c:var(--leak-red);--o:.8;--b:130px;width:360px;height:420px;right:-140px;top:470px"></span>
+        <span class="leak" style="--c:var(--leak-orange);--o:.35;--b:120px;width:260px;height:300px;left:-140px;top:-120px"></span>
+        <span class="leak leak--streak" style="--o:.55;--b:55px;width:1000px;height:130px;left:-420px;top:640px"></span>
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow">IT &amp; PHOTOGRAPHY PORTFOLIO — EST. 2026</p>
+        <h1 class="display hero__name icy" id="hero-name">Alexander<br>Nguyen</h1>
+        <p class="hero__tagline">BUILDING NETWORKS &amp; WEBSITES. CAPTURING CONCERTS, PEOPLE AND PLACES.</p>
+        <a class="btn" href="#work">Explore my work</a>
+      </div>
+
+      <div class="hero__stack" aria-hidden="true">
+        <div class="ph"><img src="assets/photos/concert-stage.jpg" alt=""></div>
+        <div class="ph"><img src="assets/photos/concert-nebula.jpg" alt=""></div>
+      </div>
+      <p class="note note--ring" aria-hidden="true">let's build<br>something</p>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>NETWORKING</span><span>↓</span><span>WEB DEV</span><span>↓</span><span>PHOTOGRAPHY</span><span>↓</span><span>UI DESIGN</span><span>↓</span>
+          <span>NETWORKING</span><span>↓</span><span>WEB DEV</span><span>↓</span><span>PHOTOGRAPHY</span><span>↓</span><span>UI DESIGN</span><span>↓</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about container" id="about" aria-labelledby="about-title">
+      <div class="leaks" aria-hidden="true">
+        <span class="leak" style="--o:.35;--b:160px;width:500px;height:500px;left:-200px;top:620px"></span>
+      </div>
+      <h2 class="section-title reveal" id="about-title" style="margin-bottom:48px">About me</h2>
+      <div class="about__grid">
+        <div class="ph about__portrait reveal">
+          Your portrait
+          <!-- Add your photo as assets/photos/portrait.jpg and it appears here automatically -->
+          <img src="assets/photos/portrait.jpg" alt="Portrait of Alexander Nguyen" data-optional>
+        </div>
+        <div class="about__text reveal">
+          <p class="lead">I’m an IT student who likes knowing how things connect — and a photographer who likes catching the moment they do.</p>
+          <p class="about__bio">Write a few sentences here about who you are: what you study, what got you into IT, the kind of systems and sites you like to build, and what you love shooting with a camera. Keep it personal — this is where visitors get to know you.</p>
+          <dl class="facts">
+            <div><dt>Studying</dt><dd>Information Technology</dd></div>
+            <div><dt>Building</dt><dd>Networks &amp; websites</dd></div>
+            <div><dt>Shooting</dt><dd>Concerts, people &amp; places</dd></div>
+          </dl>
+          <div><a class="btn" href="assets/resume.pdf" download>Download resume</a></div>
+        </div>
+      </div>
+      <p class="note" aria-hidden="true">that's me!</p>
+    </section>
+
+    <!-- ============ LANGUAGES CAROUSEL ============ -->
+    <section class="section container" style="padding-top:40px" aria-labelledby="lang-title" data-carousel>
+      <div class="carousel__head reveal">
+        <h2 class="section-title" id="lang-title">Languages I speak</h2>
+        <div class="carousel__arrows">
+          <button class="round-btn" type="button" aria-label="Previous" data-prev>←</button>
+          <button class="round-btn round-btn--accent" type="button" aria-label="Next" data-next>→</button>
+        </div>
+      </div>
+      <!-- Edit this list to match the languages you know -->
+      <ul class="carousel__track reveal" tabindex="0" aria-label="Programming languages">
+        <li class="lang"><span class="lang__glyph icy">&lt;/&gt;</span><div><h3>HTML</h3><p>Structure &amp; semantics</p></div></li>
+        <li class="lang"><span class="lang__glyph icy">{ }</span><div><h3>CSS</h3><p>Layout &amp; styling</p></div></li>
+        <li class="lang"><span class="lang__glyph icy">JS</span><div><h3>JavaScript</h3><p>Interactivity &amp; DOM</p></div></li>
+        <li class="lang"><span class="lang__glyph icy">PY</span><div><h3>Python</h3><p>Scripting &amp; automation</p></div></li>
+        <li class="lang"><span class="lang__glyph icy">JV</span><div><h3>Java</h3><p>Object-oriented programming</p></div></li>
+        <li class="lang"><span class="lang__glyph icy">SQL</span><div><h3>SQL</h3><p>Databases &amp; queries</p></div></li>
+        <li class="lang"><span class="lang__glyph icy">$_</span><div><h3>Bash</h3><p>Shell &amp; command line</p></div></li>
+        <li class="lang"><span class="lang__glyph icy">IOS</span><div><h3>Cisco IOS</h3><p>Router &amp; switch config</p></div></li>
+      </ul>
+      <div class="carousel__dots" aria-label="Carousel position"></div>
+    </section>
+
+    <!-- ============ IT PROJECTS ============ -->
+    <section class="section section--line container" id="work" aria-labelledby="it-title">
+      <div class="section-head reveal">
+        <h2 class="display feature-title icy" id="it-title">IT Projects</h2>
+        <span class="num">01</span>
+      </div>
+      <p class="note" style="right:calc(var(--pad) + 120px);top:90px" aria-hidden="true">my builds</p>
+      <div class="feature-it">
+        <a class="feature-link reveal" href="it-projects.html" aria-label="See all IT projects">
+          <div class="ph cover">
+            StreamFinder
+            <img src="assets/streamfinder/cover.png" alt="StreamFinder app screens" data-optional>
+          </div>
+        </a>
+        <div class="feature-it__details reveal">
+          <p>Networking labs, web development and UI design — the systems I’ve configured, built, and broken (then fixed).</p>
+          <ul class="tags">
+            <li class="tag">Networking</li><li class="tag">Packet Tracer</li><li class="tag">Web Dev</li><li class="tag">UI Design</li><li class="tag">Figma</li>
+          </ul>
+          <a class="link" href="it-projects.html">View all projects →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PHOTOGRAPHY ============ -->
+    <section class="section container" aria-labelledby="photo-title">
+      <div class="leaks" aria-hidden="true">
+        <span class="leak" style="--o:.55;--b:160px;width:520px;height:620px;right:-260px;top:160px"></span>
+        <span class="leak" style="--c:var(--leak-red);--o:.45;--b:140px;width:260px;height:520px;right:-120px;top:480px"></span>
+      </div>
+      <div class="section-head reveal">
+        <span class="num">02</span>
+        <h2 class="display feature-title icy" id="photo-title">Photography</h2>
+      </div>
+      <p class="note note--ring" style="left:calc(var(--pad) + 40px);top:110px" aria-hidden="true">film &amp; light</p>
+      <a class="photo-row reveal" href="photography.html" aria-label="Open the photography gallery">
+        <div class="ph cover"><img src="assets/photos/concert-spotlights.jpg" alt="Concert stage under spotlights"></div>
+        <div class="ph cover"><img src="assets/photos/concert-nebula.jpg" alt="Performers dancing in front of a nebula screen"></div>
+        <div class="ph cover"><img src="assets/photos/concert-stage.jpg" alt="Four performers on stage"></div>
+        <div class="ph cover">Your photo</div>
+      </a>
+      <div class="feature-foot reveal">
+        <p style="margin:0">Concerts, people and places — shot on my Fujifilm X100VI.</p>
+        <a class="link" href="photography.html">View the gallery →</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ CONTACT FOOTER ============ -->
+  <footer class="contact" id="contact">
+    <div class="leaks" aria-hidden="true">
+      <span class="leak" style="--o:.55;--b:150px;width:700px;height:260px;left:-120px;bottom:-140px"></span>
+      <span class="leak" style="--c:var(--leak-red);--o:.45;--b:130px;width:400px;height:200px;left:380px;bottom:-120px"></span>
+    </div>
+    <h2 class="display contact__title icy" style="position:relative;z-index:1">Let's connect</h2>
+    <div class="contact__row">
+      <a class="contact__email" href="mailto:contact@tzpicalx.com">contact@tzpicalx.com</a>
+      <ul class="socials">
+        <li><a href="https://github.com/tzpicalx" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/tzpicalx" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/tzpicalx" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+    <small>© <span data-year>2026</span> Alexander Nguyen</small>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

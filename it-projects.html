@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IT Projects — Alexander Nguyen</title>
+  <meta name="description" content="Networking, web development and UX design projects by Alexander Nguyen, including the StreamFinder mobile app prototype.">
+  <meta name="theme-color" content="#050505">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Inter:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <a class="nav__brand" href="index.html" aria-label="Alexander Nguyen, home">
+      <strong>ALEXANDER NGUYEN</strong><span>IT &amp; photography</span>
+    </a>
+    <button class="nav__toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
+    <nav aria-label="Main">
+      <ul class="nav__links" id="nav-links">
+        <li><a href="it-projects.html" aria-current="page">IT Projects</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="#contact" class="is-accent">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="leaks" aria-hidden="true">
+        <span class="leak" style="--o:.6;--b:150px;width:460px;height:700px;right:-180px;top:-120px"></span>
+      </div>
+      <h1 class="display icy">IT Projects</h1>
+      <p>Networking, web development and UX design — things I’ve configured, built, and tested with real people.</p>
+    </section>
+
+    <!-- Project index -->
+    <ol class="index reveal" aria-label="Project list">
+      <li>
+        <a href="#streamfinder">
+          <span class="index__num">01</span>
+          <span class="index__name">StreamFinder</span>
+          <span class="index__cat">UX research · Mobile app prototype</span>
+          <span class="index__year">2026</span>
+          <span class="index__arrow" aria-hidden="true">↓</span>
+        </a>
+      </li>
+      <li class="is-soon">
+        <div class="index__row"><span class="index__num">02</span><span class="index__name">Your next project</span><span class="index__cat">Networking · Packet Tracer</span><span class="index__year">—</span><span></span></div>
+      </li>
+      <li class="is-soon">
+        <div class="index__row"><span class="index__num">03</span><span class="index__name">Your next project</span><span class="index__cat">Web development</span><span class="index__year">—</span><span></span></div>
+      </li>
+    </ol>
+
+    <!-- ============ STREAMFINDER CASE STUDY ============ -->
+    <article class="section section--line container" id="streamfinder" aria-labelledby="sf-title">
+      <div class="leaks" aria-hidden="true">
+        <span class="leak" style="--o:.5;--b:170px;width:520px;height:900px;right:-260px;top:700px"></span>
+        <span class="leak" style="--c:var(--leak-red);--o:.4;--b:150px;width:300px;height:600px;left:-160px;top:900px"></span>
+      </div>
+
+      <div class="section-head reveal">
+        <h2 class="display case-title icy" id="sf-title">StreamFinder</h2>
+        <span class="num">01</span>
+      </div>
+      <p class="note" style="right:calc(var(--pad) + 220px);top:90px" aria-hidden="true">one app, every service</p>
+
+      <div class="case-intro reveal">
+        <p class="lead">A mobile app prototype that lets you search every streaming service at once — so you spend less time hunting and more time watching.</p>
+        <dl class="meta">
+          <div><dt>Course</dt><dd>CAP 3104 · Group 8</dd></div>
+          <div><dt>Team</dt><dd>5 members</dd></div>
+          <div><dt>Tools</dt><dd>Figma, Google Forms</dd></div>
+          <div><dt>Type</dt><dd>Mobile app · UX research</dd></div>
+        </dl>
+      </div>
+
+      <!-- Export each screen from Figma as PNG into assets/streamfinder/ with these names
+           and they show up inside the phones automatically. -->
+      <div class="phones reveal">
+        <figure class="phone">
+          <div class="phone__screen"><div><span>Welcome</span><small>StreamFinder screen</small></div><img src="assets/streamfinder/welcome.png" alt="StreamFinder welcome screen" data-optional></div>
+          <figcaption>Welcome</figcaption>
+        </figure>
+        <figure class="phone">
+          <div class="phone__screen"><div><span>Home</span><small>StreamFinder screen</small></div><img src="assets/streamfinder/home.png" alt="StreamFinder home screen" data-optional></div>
+          <figcaption>Home</figcaption>
+        </figure>
+        <figure class="phone">
+          <div class="phone__screen"><div><span>Search results</span><small>StreamFinder screen</small></div><img src="assets/streamfinder/search-results.png" alt="StreamFinder search results" data-optional></div>
+          <figcaption>Search results</figcaption>
+        </figure>
+        <figure class="phone">
+          <div class="phone__screen"><div><span>Movie details</span><small>StreamFinder screen</small></div><img src="assets/streamfinder/movie-details.png" alt="StreamFinder movie details screen" data-optional></div>
+          <figcaption>Movie details</figcaption>
+        </figure>
+      </div>
+
+      <div class="story reveal">
+        <div>
+          <h3 class="eyebrow">The problem</h3>
+          <p>Shows and movies are scattered across Netflix, Hulu, Max, Disney+, Prime Video, Apple TV+ and more — with no way to browse them all at once. Titles hop between services as licensing deals change, so people waste time jumping app to app.</p>
+        </div>
+        <div>
+          <h3 class="eyebrow">Who it’s for</h3>
+          <p>College students and young adults juggling multiple subscriptions who want to find something to watch without switching apps — and want to browse, filter and organize based on the services they actually pay for.</p>
+        </div>
+        <div>
+          <h3 class="eyebrow">The research</h3>
+          <p>We interviewed 6 people in our target audience — 3 face-to-face and 3 through a Google Forms questionnaire — using identical questions so the answers could be compared reliably. The goal: learn what people weigh when deciding what to watch.</p>
+        </div>
+      </div>
+
+      <div class="reveal" style="display:grid;gap:24px;margin-bottom:56px">
+        <h3 class="eyebrow">What’s in the prototype</h3>
+        <ul class="tags">
+          <li class="tag">Onboarding &amp; service picker</li>
+          <li class="tag">Search across every service</li>
+          <li class="tag">Genre results</li>
+          <li class="tag">Filter by type, director &amp; decade</li>
+          <li class="tag">Rotten Tomatoes &amp; IMDb filters</li>
+          <li class="tag">Where-to-watch details</li>
+          <li class="tag">Saved list</li>
+          <li class="tag">Actor pages</li>
+          <li class="tag">Sign in &amp; sign up</li>
+        </ul>
+      </div>
+
+      <a class="btn reveal" href="https://www.figma.com/design/IWbJ02oDJtvaBSyrxFl4Jm/StreamFinder--With-Interactives-" target="_blank" rel="noopener">Try the interactive prototype ↗</a>
+    </article>
+
+    <!-- ============ MORE ============ -->
+    <section class="section container" style="padding-top:40px" aria-labelledby="more-title">
+      <h2 class="section-title reveal" id="more-title">More projects</h2>
+      <div class="slots reveal">
+        <div class="slot"><strong>02</strong><span>Next project goes here</span></div>
+        <div class="slot"><strong>03</strong><span>Next project goes here</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="contact" id="contact">
+    <div class="leaks" aria-hidden="true">
+      <span class="leak" style="--o:.55;--b:150px;width:700px;height:260px;left:-120px;bottom:-140px"></span>
+      <span class="leak" style="--c:var(--leak-red);--o:.45;--b:130px;width:400px;height:200px;left:380px;bottom:-120px"></span>
+    </div>
+    <h2 class="display contact__title icy" style="position:relative;z-index:1">Let's connect</h2>
+    <div class="contact__row">
+      <a class="contact__email" href="mailto:contact@tzpicalx.com">contact@tzpicalx.com</a>
+      <ul class="socials">
+        <li><a href="https://github.com/tzpicalx" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/tzpicalx" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/tzpicalx" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+    <small>© <span data-year>2026</span> Alexander Nguyen</small>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
