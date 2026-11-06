@@ -25,7 +25,7 @@ assets/streamfinder/ StreamFinder screen exports
 |---|---|
 | Add a photo to the gallery | Put it in `assets/photos/`, add a line to `PHOTOS` in `js/photography.js`. A new `category` makes a new filter button automatically. |
 | Your portrait (About) | Save as `assets/photos/portrait.jpg` — it appears automatically |
-| StreamFinder screens | In Figma, export the frames as PNG to `assets/streamfinder/` named `welcome.png`, `home.png`, `search-results.png`, `movie-details.png`, plus `cover.png` for the Home page cover |
+| StreamFinder screens | In Figma, export the frames to `assets/streamfinder/` named `welcome.jpg`, `home.jpg`, `search-results.jpg`, `movie-details.jpg`, plus `cover.jpg` for the Home page cover |
 | Resume button | Save your resume as `assets/resume.pdf` |
 | Email + social links | Footer of each page (contact@tzpicalx.com, tzpicalx links) |
 | Bio, languages list | `index.html` (About and Languages sections) |

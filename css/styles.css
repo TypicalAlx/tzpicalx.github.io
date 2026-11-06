@@ -454,7 +454,7 @@ button.ph { padding: 0; width: 100%; font: inherit; color: var(--muted); }
 .meta dd { margin: 0; font-weight: 500; text-align: right; }
 
 .phones { display: flex; justify-content: center; gap: 24px; padding-block: 24px 72px; }
-.phone { display: grid; gap: 16px; justify-items: center; }
+.phone { display: grid; gap: 16px; justify-items: center; margin: 0; }
 .phone:nth-child(even) { padding-top: 48px; }
 .phone__screen {
   width: 300px;
